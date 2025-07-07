@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
   "dev": "vite-plugin-ssr dev",
-  "build": "node node_modules/vite-plugin-ssr/dist/cjs/node/cli/bin.js build",
-  "start": "vite-plugin-ssr start"
+  "build": "vite build",
+  "start": "vite preview"
   },
+
   "dependencies": {
     "cross-env": "^7.0.3",
     "vite-plugin-ssr": "^0.4.142",
