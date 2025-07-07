@@ -1,5 +1,7 @@
 export { onBeforeRender }
-
+export default {
+  route: '/service-us/:id'
+}
 async function onBeforeRender(pageContext: any) {
   const { id } = pageContext.routeParams
   return {

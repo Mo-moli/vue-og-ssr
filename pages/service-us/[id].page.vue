@@ -5,7 +5,5 @@
 </template>
 
 <script setup lang="ts">
-const props = defineProps<{ id: string }>()
-console.log('✅ from defineProps:', props.id)
+const { id } = defineProps<{ id: string }>()
 </script>
-
