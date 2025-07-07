@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
   "dev": "vite-plugin-ssr dev",
-  "build": "vite-plugin-ssr build",
+  "build": "node node_modules/vite-plugin-ssr/dist/cjs/node/cli/bin.js build",
   "start": "vite-plugin-ssr start"
   },
   "dependencies": {
