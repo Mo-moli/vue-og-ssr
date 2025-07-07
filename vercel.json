@@ -4,7 +4,7 @@
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/server/entry.js"
+      "destination": "/server/entries/pages_renderer_default-page-server.mjs"
     }
   ]
 }
