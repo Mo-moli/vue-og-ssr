@@ -1,5 +1,8 @@
+<!-- pages/index.page.vue -->
 <template>
-  <h1>Welcome to the Home Page</h1>
-  <p>This is the default route at <code>/</code>.</p>
+  <div>
+    <h1>Welcome</h1>
+    <a href="/service-us/123">Go to Service 123</a>
+  </div>
 </template>
 

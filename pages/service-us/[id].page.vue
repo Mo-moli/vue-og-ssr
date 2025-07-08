@@ -1,9 +1,13 @@
 <template>
   <div>
-    <h1>This is page {{ id }}</h1>
+    <h1>Service {{ id }}</h1>
+    <p>Description: {{ description }}</p>
   </div>
 </template>
 
 <script setup lang="ts">
-const { id } = defineProps<{ id: string }>()
+const props = defineProps<{
+  id: string
+  description: string
+}>()
 </script>

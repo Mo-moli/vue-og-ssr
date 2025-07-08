@@ -1,19 +1,16 @@
-export async function onBeforeRender(pageContext) {
-  const id = pageContext.routeParams.id
+export { onBeforeRender }
 
-  const serviceNameMap = {
-    '123': '冷氣清洗服務',
-    '456': '水管疏通服務'
-  }
+async function onBeforeRender(pageContext: any) {
+  const { id } = pageContext.routeParams
 
-  const serviceName = serviceNameMap[id] || '未知服務'
+  // 模擬 API 回傳的內容
+  const description = `This is service ${id}`
 
   return {
     pageContext: {
-      pageProps: { serviceName },
-      documentProps: {
-        title: serviceName,
-        ogTitle: serviceName
+      pageProps: {
+        id,
+        description
       }
     }
   }
