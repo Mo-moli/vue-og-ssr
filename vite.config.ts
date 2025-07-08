@@ -5,4 +5,9 @@ import vike from 'vike/plugin'
 
 export default defineConfig({
   plugins: [vue(), vike()],
+
+  ssr: {
+  noExternal: ['vike']
+}
+
 })
