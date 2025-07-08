@@ -1,10 +1,8 @@
-import vue from '@vitejs/plugin-vue'
-import ssr from 'vite-plugin-ssr/plugin'
+// vite.config.ts
 import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+import vike from 'vike/plugin'
 
 export default defineConfig({
-  plugins: [vue(), ssr()],
-  ssr: {
-    noExternal: ['vite-plugin-ssr'] // 確保 SSR 正常
-  }
+  plugins: [vue(), vike()],
 })

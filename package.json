@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "cross-env": "^7.0.3",
-    "vite-plugin-ssr": "0.4.142",
+    "vike": "^0.4.235",
     "vue": "^3.5.17"
   },
   "devDependencies": {

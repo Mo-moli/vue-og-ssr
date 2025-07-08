@@ -3,7 +3,8 @@ export { passToClient }
 
 import { renderToString } from 'vue/server-renderer'
 import { createApp } from './app'
-import { escapeInject, dangerouslySkipEscape } from 'vite-plugin-ssr/server'
+import { escapeInject, dangerouslySkipEscape } from 'vike/server'
+
 
 const passToClient = ['documentProps']
 
